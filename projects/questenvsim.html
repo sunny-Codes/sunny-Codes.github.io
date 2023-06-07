@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>QuestEnvSim: Environment-Aware Simulated Motion Tracking from Sparse Sensors</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="custom.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="mainNav">
+        <a class="navbar-brand" style="white-space:normal;" href="questenvsim.html">QuestEnvSim: Environment-Aware Simulated Motion Tracking from Sparse Sensors</a>
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="text-center">
+            <h3 class="mt-5 my-4">QuestEnvSim: Environment-Aware Simulated Motion Tracking from Sparse Sensors</h3>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm">
+              <h5 style="display: inline-block;"><a href="https://sunny-codes.github.io/" target="_blank">Sunmin Lee</a></h5>
+              <h7><sup>1</sup></h7>
+            </div>
+            <div class="col-sm-auto">
+              <h5 style="display: inline-block;"><a href="https://www.sebastianxstarke.com/" target="_blank">Sebastian Starke</a></h5>
+              <h7><sup>2</sup></h7>
+            </div>
+            <div class="col-sm">
+              <h5 style="display: inline-block;"><a href="http://yutingye.info/" target="_blank">Yuting Ye</a></h5>
+              <h7><sup>2</sup></h7>
+            </div>
+            <div class="col-sm">
+              <h5 style="display: inline-block;"><a href="https://sites.google.com/view/jungdam/" target="_blank">Jungdam Won</a></h5>
+              <h7><sup>1</sup></h7>
+            </div>
+            <div class="col-sm-auto">
+                <h5 style="display: inline-block;"><a href="https://alex-winkler.com/" target="_blank">Alexander Winkler</a></h5>
+                <h7><sup>2</sup></h7>
+            </div>
+            <div class="col-sm-1">
+            </div>
+        </div>
+
+        <div class="text-center">
+        <h6 class="my-2">(1) Seoul National University (2) Reality Labs Research, Meta </h6>
+        </div>
+
+        <div class="row">
+        <div class="col-sm-10 text-center">
+            <img src="../assets/img/publication/paper_teaser/questenvsim.png" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-sm-2 text-center" >
+            <div class="p-2 rounded float-right" style="background-color: #eee;">
+                <img src="../assets/img/publication/paper_thumbnail/questenvsim.png" class="img-fluid">
+                <h6><i>Paper<br> (Coming Soon)</i></h6>
+            </div>
+            <!-- <div class="p-2 rounded float-right" style="background-color: #eee;"><a href=".pdf"><img src="thumbnail.png" class="img-fluid"></a> -->
+            <!-- <h6 style="margin-top: .5rem; margin-bottom: 0rem;"><a href=".pdf" class="text-dark"><i>Paper (Coming Soon)</i></a></h6></div> -->
+        </div>
+        </div>
+
+        <hr>
+        <div class="row my-4">
+        <div class="col-sm-1">
+            <h4>Abstract</h4>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-10 text-justify">
+            Replicating a user’s pose from only wearable sensors is important for many AR/VR applications. 
+            Most existing methods for motion tracking avoid environment interaction apart from foot-floor contact due to their complex dynamics and hard constraints. 
+            However, in daily life people regularly interact with their environment, e.g. by sitting on a couch or leaning on a desk. 
+            Using Reinforcement Learning, we show that headset and controller pose, if combined with physics simulation and environment observations can generate realistic full-body poses even in highly constrained environments. 
+            The physics simulation automatically enforces the various constraints necessary for realistic poses, instead of manually specifying them as in many kinematic approaches. 
+            These hard constraints allow us to achieve high-quality interaction motions without typical artifacts such as penetration or contact sliding. 
+            We discuss three features, the environment representation, the contact reward and scene randomization, crucial to the performance of the method. 
+            We demonstrate the generality of the approach through various examples, such as sitting on chairs, a couch and boxes, stepping over boxes, rocking a chair and turning an office chair. 
+            We believe these are some of the highest-quality results achieved for motion tracking from sparse sensor with scene interaction.
+        </div>
+        </div>
+        <hr>
+
+        <div class="row my-4">
+        <div class="col-sm-1">
+            <h4>Publication</h4>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-10 text-center">
+            <div class="">
+            Sunmin Lee, Sebastian Starke, Yuting Ye, Jungdam Won and Alexander Winkler
+            <br>
+            QuestEnvSim: Environment-Aware Simulated Motion Tracking from Sparse Sensors
+            <br>
+            <!-- ACM Trans. Graph. a,b,c. (SIGGRAPH 20XX)  -->
+            SIGGRAPH 2023 <i>(to appear)</i>
+            <br>
+            </div>
+        </div>
+                
+        </div>
+        <hr>
+
+        <div class="row my-4">
+        <div class="col-sm-1">
+            <h4>Video</h4>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-10 text-center">
+            <div class="videoWrapper">
+            <iframe width="900" height="540" src="https://www.youtube.com/embed/HXkp3ILm5bY" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+        </div>
+        </div>
+        <hr>
+	<hr>
+
+        <div class="row my-4">
+        <div class="col-sm-1">
+            <h4>Bibtex</h4>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-10 p-2 rounded float-right" style="background-color: #eee;">
+        <pre style="font-size: 90%; margin-top: 1rem; margin-left: 0.5rem;"><code>@article{10.1145/3588432.3591504,
+author = {Lee, Sunmin and Starke, Sebastian and Ye, Yuting and Won, Jungdam and Winkler, Alexander},
+title = {QuestEnvSim: Environment-Aware Simulated Motion Tracking from Sparse Sensors},
+year = {2023},
+doi = {10.1145/3588432.3591504},
+booktitle = {SIGGRAPH 2023 Conference Papers},
+location = {Los Angeles, USA},
+}
+        </code></pre>         
+        </div>
+        </div>
+        <hr>
+    </div>
+
+
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-sm-3 bg-dark">
+        <div class="container">
+            <!-- <p class="m-0 text-center text-white">Copyright &copy; Sunmin Lee <br> Latest update: June 2023</p> -->
+            <p class="m-0 text-center text-white">Latest update: June 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>

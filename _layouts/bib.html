@@ -7,9 +7,9 @@
           {% if entry.preview contains '://' -%}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
           {%- else -%}
-            {%- assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' -%}
-            {% include figure.html
-            path=entry_path
+            {%- assign entry_path = entry.preview | prepend: '/assets/img/publication/preview/' -%}
+            {% include figure.html 
+            path=entry_path 
             class="preview z-depth-1 rounded"
             alt=entry.preview -%}
           {%- endif -%}
@@ -107,7 +107,7 @@
         </div>
 
         <!-- Journal/Book title and date -->
-        {% assign proceedings = "inproceedings,incollection" | split: ','%}
+        <!-- {% assign proceedings = "inproceedings,incollection" | split: ','%}
         {% assign thesis = "thesis,mastersthesis,phdthesis" | split: ','%}
         {% if entry.type == "article" -%}
           {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
@@ -128,10 +128,8 @@
         {%- capture periodical -%}{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
         <div class="periodical">
           {{ periodical | strip }}
-        </div>
-        <div class="periodical">
-          {{ entry.note | strip }}
-        </div>
+        </div> -->
+        <div class="noteclass"> {{ entry.note | strip }}</div>
 
           <!-- Links/Buttons -->
           <div class="links">
@@ -144,75 +142,66 @@
           {%- if entry.bibtex_show %}
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
           {%- endif %}
-          {%- if entry.html %}
-            <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
-          {%- endif %}
-          {%- if entry.pdf %}
-            {% if entry.pdf contains '://' -%}
-            <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+
+          {%- if entry.project_link %}
+            {% if entry.project_link contains '://' -%}
+            <a href="{{ entry.project_link }}" class="btn btn-sm z-depth-0" role="button">Project</a>
             {%- else -%}
-            <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="{{ entry.project_link | prepend: '/projects/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Project</a>
             {%- endif %}
           {%- endif %}
-          {%- if entry.supp %}
+
+          {%- if entry.paper_link %}
+            {% if entry.paper_link contains '://' -%}
+            <a href="{{ entry.paper_link }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            {%- else -%}
+            <a href="{{ entry.paper_link | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            {%- endif %}
+          {%- endif %}
+          {%- if entry.code_link %}
+            <a href="{{ entry.code_link }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+          {%- endif %}
+          {%- if entry.video_link %}
+            <a href="{{ entry.video_link }}" class="btn btn-sm z-depth-0" role="button">Video</a>
+          {%- endif %}
+          
+          <!-- {%- if entry.display_custom %}
+            <a href="{{ entry.video_link }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+          {%- endif %}
+           -->
+          <!-- {%- if entry.supp %}
             {% if entry.supp contains '://' -%}
             <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
             {%- else -%}
             <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
             {%- endif %}
-          {%- endif %}
-          {%- if entry.blog %}
+          {%- endif %} -->
+          <!-- {%- if entry.blog %}
             <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
-          {%- endif %}
-          {%- if entry.code %}
-            <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
-          {%- endif %}
-          {%- if entry.poster %}
+          {%- endif %} -->
+          <!-- {%- if entry.poster %}
             {% if entry.poster contains '://' -%}
             <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
             {%- else -%}
             <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
             {%- endif %}
-          {%- endif %}
-          {%- if entry.slides %}
+          {%- endif %} -->
+          {%- if entry.slides_link %}
             {% if entry.slides contains '://' -%}
-            <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+            <a href="{{ entry.slides_link }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
             {%- else -%}
-            <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+            <a href="{{ entry.slides_link | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
             {%- endif %}
-          {%- endif %}
-          {%- if entry.website %}
-            <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
           {%- endif %}
           </div>
           {% if site.badges %}
           <div class="badges">
-            {%- if site.badges.altmetric_badge %}
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"
-              {% if entry.eprint %}
-                data-arxiv-id="{{ entry.eprint }}"
-              {% elsif entry.doi %}
-                data-doi="{{ entry.doi }}"
-              {% elsif entry.altmetric %}
-                data-altmetric-id="{{ entry.altmetric }}"
-              {% elsif entry.pmid %}
-                data-pmid="{{ entry.pmid }}"
-              {% elsif entry.isbn %}
-                data-isbn="{{ entry.isbn }}"
-              {% endif %}
-              ></span>
-            {%- endif %}
-            {%- if site.badges.dimensions_badge %}
-              <span class="__dimensions_badge_embed__"
-              {% if entry.doi %}
-                data-doi="{{ entry.doi }}"
-              {% else if entry.pmid %}
-                data-pmid="{{ entry.pmid }}"
-              {% else %}
-                data-id="{{ entry.dimensions }}"
-              {% endif %}
-              data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-            {%- endif %}
+          {%- if site.badges.altmetric_badge or entry.altmetric %}
+            <span class="altmetric-embed" {% if entry.doi %}data-doi="{{ entry.doi }}"{% else %}data-altmetric-id="{{ entry.altmetric }}"{% endif %} data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+          {%- endif %}
+          {%- if site.badges.dimensions_badge or entry.dimensions %}
+            <span class="__dimensions_badge_embed__" {% if entry.doi %}data-doi="{{ entry.doi }}"{% else if entry.pmid %}data-pmid="{{ entry.pmid }}"{% else %}data-id="{{ entry.dimensions }}"{% endif %} data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          {%- endif %}
           </div>
           {%- endif %}
 
