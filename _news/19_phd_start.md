@@ -2,9 +2,10 @@
 layout: post
 date: 2019-03-02 07:59:00-0400
 inline: true
+category: PhD
 ---
 
-MS/PhD in Computer Science and Engineering
+Started MS/PhD in Computer Science and Engineering at Seoul Nat'l Univ
  <!-- :sparkles: :smile: -->
 
 

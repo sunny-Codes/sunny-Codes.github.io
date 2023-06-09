@@ -42,14 +42,14 @@ layout: default
 
           <!-- News -->
           {% if page.news -%}
-            <h3>Work Experience</h3>
+            <h4>News</h4>
             <!-- <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">Work Experience</a></h2> -->
             {%- include news.html %}
           {%- endif %}
 
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h3><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h3>
+            <h4><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h4>
             {%- include selected_papers.html %}
           {%- endif %}
 

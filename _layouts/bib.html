@@ -139,9 +139,6 @@
           {%- if entry.arxiv %}
             <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
           {%- endif %}
-          {%- if entry.bibtex_show %}
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          {%- endif %}
 
           {%- if entry.project_link %}
             {% if entry.project_link contains '://' -%}
@@ -153,7 +150,7 @@
 
           {%- if entry.paper_link %}
             {% if entry.paper_link contains '://' -%}
-            <a href="{{ entry.paper_link }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="{{ entry.paper_link }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
             {%- else -%}
             <a href="{{ entry.paper_link | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
             {%- endif %}
@@ -164,7 +161,11 @@
           {%- if entry.video_link %}
             <a href="{{ entry.video_link }}" class="btn btn-sm z-depth-0" role="button">Video</a>
           {%- endif %}
-          
+
+          {%- if entry.bibtex_show %}
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+          {%- endif %}
+
           <!-- {%- if entry.display_custom %}
             <a href="{{ entry.video_link }}" class="btn btn-sm z-depth-0" role="button">Code</a>
           {%- endif %}

@@ -20,14 +20,13 @@ social: true  # includes social icons at the bottom of the page
 
 :computer: Hello! I am a Ph.D candidate at Seoul National University. 
 
-<!-- I am a member of [Intelligent Motion Lab](https://sites.google.com/view/snuimo/home) lead by [Jungdam Won](https://sites.google.com/view/jungdam).\\ -->
-I am a member of Intelligent Motion Lab lead by [Jungdam Won](https://sites.google.com/view/jungdam).\\
+I am a member of [Intelligent Motion Lab](https://sites.google.com/view/snuimo/home) led by [Jungdam Won](https://sites.google.com/view/jungdam).\\
 Previously, I was advised by [Jehee Lee](https://mrl.snu.ac.kr/~jehee/) at [Movement Research Lab](https://mrl.snu.ac.kr). 
 
 
 My primary research interest is about understanding human movements and creating a virtual agent that moves like us. 
 It includes, but is not limited to, character animation, machine learning and robotics.
 
-<a style="color:DodgerBlue" href="assets/pdf/CV_June23.pdf">
+<a style="color:global-theme-color" href="assets/pdf/CV_June23.pdf">
 <i class="fas fa-file-pdf"></i> Curriculum Vitae</a> <!-- fa fa-file-pdf -o fa-lg-->
 
