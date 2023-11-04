@@ -27,6 +27,6 @@ Previously, I was advised by [Jehee Lee](https://mrl.snu.ac.kr/~jehee/) at [Move
 My primary research interest is about understanding human movements and creating a virtual agent that moves like us. 
 It includes, but is not limited to, character animation, machine learning and robotics.
 
-<a style="color:global-theme-color" href="assets/pdf/CV_June23.pdf">
+<a style="color:global-theme-color" href="assets/pdf/CV_Nov23.pdf">
 <i class="fas fa-file-pdf"></i> Curriculum Vitae</a> <!-- fa fa-file-pdf -o fa-lg-->
 

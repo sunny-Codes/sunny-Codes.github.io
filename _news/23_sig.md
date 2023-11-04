@@ -5,4 +5,4 @@ inline: true
 category: Paper
 ---
 
-Our Paper [QuestEnvSim](http://127.0.0.1:4000/projects/questenvsim.html) is accepted to Siggraph 2023. See you at LA!
+Our Paper [QuestEnvSim](https://sunny-codes.github.io/projects/questenvsim.html) is accepted to Siggraph 2023. See you in LA!
