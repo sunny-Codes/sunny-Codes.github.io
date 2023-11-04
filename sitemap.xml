@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://sunny-codes.github.io/news/19_phd_start/</loc>
-<lastmod>2019-03-02T11:59:00+00:00</lastmod>
-</url>
-<url>
 <loc>https://sunny-codes.github.io/news/22_meta_intern/</loc>
 <lastmod>2022-08-29T04:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://sunny-codes.github.io/news/23_sig/</loc>
 <lastmod>2023-04-01T04:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://sunny-codes.github.io/news/23_meta_intern/</loc>
+<lastmod>2023-06-20T04:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://sunny-codes.github.io/news/23_grant/</loc>
+<lastmod>2023-07-01T04:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://sunny-codes.github.io/news/23_sigasia/</loc>
+<lastmod>2023-08-01T04:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://sunny-codes.github.io/</loc>
@@ -29,6 +37,10 @@
 </url>
 <url>
 <loc>https://sunny-codes.github.io/projects/questenvsim.html</loc>
-<lastmod>2023-06-13T08:48:33+00:00</lastmod>
+<lastmod>2023-11-04T07:53:21+00:00</lastmod>
+</url>
+<url>
+<loc>https://sunny-codes.github.io/projects/same.html</loc>
+<lastmod>2023-11-04T07:53:21+00:00</lastmod>
 </url>
 </urlset>
