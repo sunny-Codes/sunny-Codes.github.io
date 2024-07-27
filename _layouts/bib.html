@@ -195,7 +195,7 @@
             {%- endif %}
           {%- endif %}
           </div>
-          {% if site.badges %}
+          <!-- {% if site.badges %}
           <div class="badges">
           {%- if site.badges.altmetric_badge or entry.altmetric %}
             <span class="altmetric-embed" {% if entry.doi %}data-doi="{{ entry.doi }}"{% else %}data-altmetric-id="{{ entry.altmetric }}"{% endif %} data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
@@ -204,7 +204,7 @@
             <span class="__dimensions_badge_embed__" {% if entry.doi %}data-doi="{{ entry.doi }}"{% else if entry.pmid %}data-pmid="{{ entry.pmid }}"{% else %}data-id="{{ entry.dimensions }}"{% endif %} data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
           {%- endif %}
           </div>
-          {%- endif %}
+          {%- endif %} -->
 
           {% if entry.abstract -%}
           <!-- Hidden abstract block -->
