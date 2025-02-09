@@ -5,5 +5,4 @@ inline: true
 category: Award
 ---
 
-I'm honored to be selcted as one of [WiGRAPH Rising Stars in Computer Graphics](https://www.wigraph.org/spotlights/meet-our-rising-stars-2024/). 
-See you in Denver at SIGGRAPH!
+I'm honored to be recognized as a [WiGRAPH Rising Star](https://www.wigraph.org/spotlights/meet-our-rising-stars-2024/). 

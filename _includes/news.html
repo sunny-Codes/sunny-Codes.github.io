@@ -19,7 +19,7 @@
                   {% else %}
                   <th scope="row">{{ item.date | date: "%b %Y" }}</th>
                   {% endif %}
-                  <th scope="row"><b>[{{ item.category }}]</b></th>
+                  <!-- <th scope="row"><b>{{ item.category }}</b></th> -->
                   <td>
                     {% if item.inline %}
                       {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
