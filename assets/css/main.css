@@ -193,6 +193,13 @@ blockquote {
   margin-right: 1rem;
 }
 
+.about-section {
+  margin-top: 2rem;
+}
+.about-section > h4 {
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 576px) {
   .profile {
     width: 30%;
