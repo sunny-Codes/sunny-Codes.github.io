@@ -42,15 +42,19 @@ layout: default
 
           <!-- News -->
           {% if page.news -%}
-            <h4>News</h4>
-            <!-- <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">Work Experience</a></h2> -->
-            {%- include news.html %}
+            <section class="about-section">
+              <h4>News</h4>
+              <!-- <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">Work Experience</a></h2> -->
+              {%- include news.html %}
+            </section>
           {%- endif %}
 
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h4><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h4>
-            {%- include selected_papers.html %}
+            <section class="about-section">
+              <h4><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h4>
+              {%- include selected_papers.html %}
+            </section>
           {%- endif %}
 
           <!-- Social -->

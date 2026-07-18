@@ -6,4 +6,4 @@ inline: true
 category: Intern
 ---
 
-Excited to start a return internship at [Meta Realitity Labs Research](https://about.meta.com/realitylabs/). 
+Excited to start a return internship at [Meta Reality Labs Research](https://about.meta.com/realitylabs/). 

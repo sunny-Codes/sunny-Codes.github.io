@@ -6,4 +6,4 @@ inline: true
 category: Intern
 ---
 
-Had wonderful six months at [Meta Realitity Labs Research](https://about.meta.com/realitylabs/)
+Had wonderful six months at [Meta Reality Labs Research](https://about.meta.com/realitylabs/)
