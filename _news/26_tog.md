@@ -5,4 +5,4 @@ inline: true
 category: Paper
 ---
 
-Our Paper [DMP](https://dl.acm.org/doi/10.1145/3829359) is accepted to ACM Transactions on Graphics 2026. 
+Our paper [DMP](https://dl.acm.org/doi/10.1145/3829359) is accepted to ACM Transactions on Graphics 2026. 

@@ -26,4 +26,3 @@ I also spent wonderful summers at Meta Reality Labs and NVIDIA Spatial Intellige
 
 
 ✨ On the job market! I am looking for Research Scientist / Postdoc positions starting in late 2026 or early 2027. Please check out my [CV](assets/pdf/sunmin_cv_26.pdf) and feel free to reach out if you see a potential fit! ✨
-I'm also attending SIGGRAPH this year -- Drop me an email to connect! 🙌 
